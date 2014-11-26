@@ -2,8 +2,8 @@ require 'formula'
 
 class Jjdeploy < Formula
   homepage 'https://github.com/buscarini/jjdeploy'
-  url 'https://github.com/buscarini/jjdeploy/archive/0.3.1.tar.gz'
-  sha1 '93cf50d4f162e55fb2bf18e910e6e225a47262c0'
+  url 'https://github.com/buscarini/jjdeploy/archive/0.3.2.tar.gz'
+  sha1 'efe4e0fe2cf099fd7cd29ca40445108304f49e79'
   
   def install
     prefix.install 'jjdeploy_resources','jjdeploy.config'
