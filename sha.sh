@@ -13,7 +13,8 @@ url="https://github.com/buscarini/jjdeploy/archive/"$url".tar.gz"
 fi
 
 curl -fsSL $url > jjdeploy
-sha="$(shasum jjdeploy | awk '{print $1}' | sed -e 's/^ *//' -e 's/ *$//' )"
+sha="$(shasum -a 256 jjdeploy | awk '{print $1}' | sed -e 's/^ *//' -e 's/ *$//' )"
 echo -n $sha | pbcopy
 echo "Copied sha to pasteboard"
 rm jjdeploy
+
