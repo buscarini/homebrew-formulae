@@ -11,6 +11,7 @@ class Jjdeploy < Formula
     bin.install 'jjdeploy'
     bin.install 'upload.py'
     bin.install 'askpass.py'
+    bin.install 'xcbuildsafe.sh'
   end
 
   test do
