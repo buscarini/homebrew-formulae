@@ -27,6 +27,6 @@ sed 's/^\(.*sha256 "\).*\(".*\)$/\1'"$sha256"'\2/' "$formula.modified" > "$formu
 rm "$formula.modified"
 
 git add "$formula"
-git commit -m "Release v $version"
+git commit -m "jjdeploy $version"
 git show
 git push
