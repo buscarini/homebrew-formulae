@@ -22,7 +22,7 @@ sha256=$(curl -sL "https://github.com/buscarini/jjdeploy/archive/$version.tar.gz
 git checkout master
 git pull
 
-sed 's/^\(.*\/v\).*\(.tar.gz"\)$/\1'"$version"'\2/' "$formula" > "$formula.modified"
+sed 's/^\(.*archive\/\).*\(.tar.gz"\)$/\1'"$version"'\2/' "$formula" > "$formula.modified"
 sed 's/^\(.*sha256 "\).*\(".*\)$/\1'"$sha256"'\2/' "$formula.modified" > "$formula"
 rm "$formula.modified"
 
