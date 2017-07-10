@@ -10,6 +10,7 @@ class Jjdeploy < Formula
 
     bin.install 'bin/jjdeploy'
     bin.install 'bin/upload.py'
+    bin.install 'bin/uploadSFTP.py'
     bin.install 'bin/askpass.py'
     bin.install 'bin/xcbuildsafe.sh'
     
