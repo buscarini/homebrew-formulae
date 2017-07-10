@@ -2,8 +2,8 @@ require 'formula'
 
 class Jjdeploy < Formula
   homepage 'https://github.com/buscarini/jjdeploy'
-  url "https://github.com/buscarini/jjdeploy/archive/0.9.1.tar.gz"
-  sha256 "72e4cfe15752454d07fd13a8cb814b68bc5b6a0afff5fa34c5ed372d8602f9b7"
+  url "https://github.com/buscarini/jjdeploy/archive/0.9.2.tar.gz"
+  sha256 "bbfff7e655f59bfa1820cc90952c9f211b1e71ace0b75b1d594daf7a89b73ae2"
   
   def install
     prefix.install 'jjdeploy_resources','jjdeploy.config'
@@ -13,7 +13,7 @@ class Jjdeploy < Formula
     bin.install 'bin/askpass.py'
     bin.install 'bin/xcbuildsafe.sh'
     
-    system "pip", "install", "paramiko", "--user", "python"
+    #system "pip", "install", "paramiko", "--user", "python"
   end
 
   test do
